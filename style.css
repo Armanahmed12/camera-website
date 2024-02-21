@@ -1,0 +1,262 @@
+/* Common text style */
+.commonTextHeading {
+
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+*{
+
+     box-sizing: border-box;
+     padding: 0;margin: 0;
+}
+header{
+
+     padding: 0;margin: 0;
+}
+/* header sectin style */
+
+header {
+  
+     margin: 0;
+    text-align: left;
+}
+
+header ul {
+
+      display: block;
+}
+
+.menu-icons i:nth-child(2),#menu-icon-div,.menu-icons i:first-child {
+    display: none;
+}
+
+
+header nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+   
+}
+
+header nav ul{
+
+     display: flex;
+     gap: 1.5rem;
+}
+
+header ul li {
+
+    list-style-type: none;
+}
+
+header ul li a {
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+header > div {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 1rem;
+
+}
+
+header>div div:nth-child(2) {
+
+    background-image: url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 2.8rem;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#header-text {
+
+    width: 60%;
+}
+
+header button {
+
+    background-color: #ff0051;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+}
+
+#shoppingCard, #barIcon {
+
+      display: none;
+
+}
+
+/* =============== media quiries has been started */
+
+/* header section */
+@media only screen and (max-width: 576px) {
+
+    header {
+
+          text-align: center;
+    }
+
+    header nav {
+
+           flex-direction: row;
+           gap: 0;
+           padding: 0;
+    }
+
+    header nav > h2{
+
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    header nav > div {
+
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         padding: 1rem;
+
+        
+         
+    }
+
+    header nav ul {
+
+       
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        
+         
+    }
+
+    header nav div ~ ul {
+
+        background: #03ff2d96;
+        
+    }
+   
+    header nav ul li{
+
+         margin-bottom: 1.4rem;
+    }
+
+    header > div {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    header > div div:nth-child(2){
+
+             grid-row-start: 1;
+             grid-row-end: 2;
+             
+    }
+
+    header > div div:nth-child(2){
+
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+   
+    header nav, ul {
+
+        display: flex;
+        flex-direction: column;
+       
+       
+    }
+    header nav {
+
+         flex-direction: column;
+    }
+    
+    #shoppingCard, #barIcon{
+
+         display: block;
+    }
+
+    #header-text {
+           
+           margin: 0 auto 1rem;
+           width: 90%;
+    }
+    
+    header > div:nth-child(1) h2{
+
+         font-size: 1.7rem;
+    }
+    .menu-icons {
+
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+       
+}
+
+         /* okkk */
+
+#menu-icon-div:checked ~ ul{
+
+     display: block;
+     padding: 1rem 0;
+}
+
+  /* ============== new css for responsive ============ */
+
+  .menu-icons i:nth-child(1){
+     
+     display: block;
+  }
+  header ul{
+
+       width: 100%;
+       padding: 1rem 0;
+  }
+  .menu-icons {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      
+}
+
+#menu-icon-div:checked + div > div > label > i:first-child {
+
+    display: none !important;
+
+}
+
+#menu-icon-div:checked + div > div > label > i:nth-child(2) {
+
+  display: block !important;
+
+ }
+
+}
